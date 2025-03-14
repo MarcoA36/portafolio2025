@@ -16,7 +16,7 @@ Este sistema está diseñado para permitir a una empresa de taxis gestionar de m
 ---
 
 ### 📌 **Registro de viajes pendientes**
-En esta sección, los administradores pueden gestionar los viajes en espera. La tabla es dinámica y permite ingresar el importe del viaje, asignar un destino y seleccionar el móvil que realizará el servicio. Cada cambio realizado se actualiza automáticamente en el sistema para todos los administradores y para el chofer que corresponda.  
+En esta sección se gestionan los viajes desde su carga, hasta su finalización. La tabla es dinámica y permite ingresar el importe del viaje, asignar un destino y seleccionar el móvil que realizará el servicio. Cada cambio realizado se actualiza automáticamente en el sistema para todos los administradores y para el chofer que corresponda.  
 ![Tabla de viajes pendientes](../images/sistemaGestion/tabla.webp)  
 
 ---
