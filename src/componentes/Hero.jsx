@@ -36,7 +36,7 @@ function Hero() {
             <Button
               href="/docs/CV_Marco.pdf"
               variant="info"
-              download="CV_Marco.pdf"
+              // download="CV_Marco.pdf"
               className="m-1"
             >
               Descargar C.V
