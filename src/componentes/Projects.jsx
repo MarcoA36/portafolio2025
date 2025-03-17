@@ -16,7 +16,7 @@ function Projects({ projectsRef }) {
             transition: "all 0.3s ease-in-out",
           }}
         >
-          Mis Proyectos
+          Proyectos
         </span>{" "}
         <span className="text-primary">{selectedSkill}</span>
       </h2>
