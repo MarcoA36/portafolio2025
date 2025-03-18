@@ -7,7 +7,7 @@ function Projects({ projectsRef }) {
 
   return (
     <section id="proyectos" className="py-5">
-      <h2 ref={projectsRef} className="text-center mb-4">
+      <h2 ref={projectsRef} className="text-center my-4">
         <span
           onClick={() => setSelectedSkill("")}
           style={{

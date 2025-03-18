@@ -1,5 +1,6 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useEffect } from "react";
+import SocialLinks from "./SocialLinks";
 
 function Hero() {
   useEffect(() => {
@@ -15,7 +16,7 @@ function Hero() {
   return (
     <section className="hero-section d-flex align-items-center" id="home">
       <Container>
-        <Row className="d-flex align-items-center px-5">
+        <Row className="d-flex align-items-center p-1 px-lg-5 animate__animated">
           <Col md={8} className="text-center">
             <h1 id="hero-title" className="animate__animated">
               Hola, soy Marco
@@ -27,22 +28,22 @@ function Hero() {
               aprender y mejorar.
             </p>
             <div className="buttons">
-            <Button href="#proyectos" variant="primary" className="m-1">
-              Ver Proyectos
-            </Button>
-            {/* <Button href="#contacto" variant="info">
+              <Button href="#proyectos" variant="primary" className="m-1">
+                Ver Proyectos
+              </Button>
+              {/* <Button href="#contacto" variant="info">
               Descargar C.V
             </Button> */}
-            <Button
-              href="/docs/CV_Marco.pdf"
-              variant="info"
-              // download="CV_Marco.pdf"
-              className="m-1"
-            >
-              Descargar C.V
-            </Button>
+              <Button
+                href="/docs/CV_Marco.pdf"
+                variant="info"
+                // download="CV_Marco.pdf"
+                className="m-1 text-light"
+              >
+                Descargar C.V
+              </Button>
             </div>
-           
+            <SocialLinks />
           </Col>
 
           <Col md={4} className="d-flex justify-content-center">

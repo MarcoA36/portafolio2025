@@ -12,7 +12,7 @@ function Skills({ onSkillSelect }) {
 
   return (
     <section id="habilidades" className="py-5">
-      <h2 className="text-center mb-3">Tecnologías</h2>
+      <h2 className="text-center my-2">Tecnologías</h2>
       {skillsData.map((category, idx) => (
         <div key={idx} className="text-center">
           {/* <h4>{category.name}</h4> */}
