@@ -1,44 +1,24 @@
-// import { Navbar, Nav, Container } from "react-bootstrap";
-// import { Link } from "react-router-dom";
-
-// function Header({vista}) {
-//   return (
-//     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-//       <Container>
-//       <Navbar.Brand as={Link} to="/">Portafolio</Navbar.Brand>
-//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//         <Navbar.Collapse id="basic-navbar-nav">
-//           <Nav className="ms-auto">
-//             <Nav.Link href="/#proyectos">Proyectos</Nav.Link>
-//             <Nav.Link href="/#habilidades">Habilidades</Nav.Link>
-//             <Nav.Link href="/#contacto">Contacto</Nav.Link>
-//           </Nav>
-          
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   );
-// }
-
-// export default Header;
-
-
-
-
+import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Header({ links }) {
+  const [expanded, setExpanded] = useState(false);
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" expanded={expanded}>
       <Container>
-        <Navbar.Brand as={Link} to="/">Portafolio</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
+          Portafolio
+        </Navbar.Brand>
+        <Navbar.Toggle 
+          aria-controls="basic-navbar-nav" 
+          onClick={() => setExpanded(!expanded)} 
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {links.map((link, index) => (
-              <Nav.Link key={index} href={link.href}>
+                 <Nav.Link key={index} href={link.href} onClick={() => setExpanded(false)}>
                 {link.label}
               </Nav.Link>
             ))}

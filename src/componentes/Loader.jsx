@@ -10,7 +10,7 @@ const Loader = () => (
       height: "100vh",
     }}
   >
-    <Spinner animation="border" role="status" variant="warning" style={{ width: "4rem", height: "4rem" }} />
+    <Spinner animation="border" role="status" variant="success" style={{ width: "4rem", height: "4rem" }} />
   </div>
 );
 
