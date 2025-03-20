@@ -24,8 +24,7 @@ function Hero() {
             <p id="hero-description" className="animate__animated">
               Desarrollador web con experiencia en React y Node.
               <br /> Busco formar parte de proyectos donde pueda aportar valor,
-              seguir creciendo y enfrentar nuevos desafíos. Siempre con ganas de
-              aprender y mejorar.
+              seguir creciendo y enfrentar nuevos desafíos.
             </p>
             <div className="buttons">
               <Button href="#proyectos" variant="primary" className="m-1">
@@ -48,7 +47,7 @@ function Hero() {
 
           <Col md={4} className="d-flex justify-content-center">
             <img
-              src="/fotoperfilDibujo.png"
+              src="/"
               alt="Foto de Marco"
               className="img-fluid rounded-circle"
               style={{ maxWidth: "200px" }}
