@@ -8,6 +8,7 @@ export const useApp = () => {
 };
 export const AppProvider = ({ children }) => {
   const [selectedSkill, setSelectedSkill] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const filteredProjects = selectedSkill
     ? projectsData.filter((project) => project.skills.includes(selectedSkill))
@@ -19,8 +20,12 @@ export const AppProvider = ({ children }) => {
     skillsData,
     projectsData,
     filteredProjects,
+    setSelectedProject,
+    selectedProject
   };
 
+
+  console.log(selectedProject)
   return (
     <AppContext.Provider value={contextValue}>
       {children}

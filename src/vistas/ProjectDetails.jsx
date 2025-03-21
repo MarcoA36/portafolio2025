@@ -65,8 +65,7 @@
 //           </div>
 //         )}
 //             </>
-            
-            
+
 //           )}
 //         </div>
 //         {/* {project && (
@@ -98,12 +97,6 @@
 // }
 
 // export default ProjectDetails;
-
-
-
-
-
-
 
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -141,20 +134,19 @@ function ProjectDetails() {
     <>
       <Header links={links} />
       <div className="container mt-5  d-flex flex-column ">
-      {loading ? (
-            // <div className="text-center">
-            //   <Spinner animation="border" role="status" />
-            // </div>
-            <Loader/>
-          ) : (
-        <div className="card p-4 shadow-lg markdown flex-grow-1">
-     
+        {loading ? (
+          // <div className="text-center">
+          //   <Spinner animation="border" role="status" />
+          // </div>
+          <Loader />
+        ) : (
+          <div className="card p-4 shadow-lg markdown flex-grow-1">
             <>
               <ReactMarkdown>{content}</ReactMarkdown>
               {project && (
-                <div className="mb-3">
+                <div className="mb-3 d-flex flex-wrap gap-2">
                   <button
-                    className="btn border border-2 m-3"
+                    className="btn border border-2"
                     onClick={() => navigate("/")}
                   >
                     Volver
@@ -164,10 +156,9 @@ function ProjectDetails() {
                       href={project.repositorio}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="btn btn-dark"
                     >
-                      <button className="btn btn-dark me-2">
-                        Repositorio GitHub
-                      </button>
+                      Repositorio GitHub
                     </a>
                   )}
                   {project.link && (
@@ -175,15 +166,16 @@ function ProjectDetails() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="btn btn-primary"
                     >
-                      <button className="btn btn-primary">Visitar Sitio</button>
+                      Visitar Sitio
                     </a>
                   )}
                 </div>
               )}
             </>
-          
-        </div>)}
+          </div>
+        )}
       </div>
     </>
   );
