@@ -1,0 +1,19 @@
+.project_detail {
+  background-color: var(--border-muted);
+  color: var(--text-primary);
+}
+.project_detail .carrousel {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project_detail button {
+  background-color: var(--button-bg-active);
+  border: none;
+}
+
+/* .project_detail .skills button {
+    background-color: var(--button-bg-active);
+} */

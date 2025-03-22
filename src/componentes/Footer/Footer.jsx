@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
-import SocialLinks from "./SocialLinks";
+import SocialLinks from "../SocialLinks";
 import { FaMapMarkerAlt} from "react-icons/fa";
+import "./Footer.css"
 
 function Footer() {
   return (

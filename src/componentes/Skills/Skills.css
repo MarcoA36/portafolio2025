@@ -1,0 +1,30 @@
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.skill-card {
+  background-color: var(--color-primary-950);
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-width: 100px;
+}
+
+.skill-card:hover {
+  background-color: var(--color-primary-600);
+  /* border-color: var(--color-primary-800); */
+  transform: scale(1.05);
+}
+
+.skill-card:active {
+  background-color: var(--color-primary-700);
+  transform: scale(0.95);
+}

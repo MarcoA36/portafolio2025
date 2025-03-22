@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import "./Header.css"
 function Header({ links }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" expanded={expanded}>
+    <Navbar className="navbar" expand="lg" fixed="top" expanded={expanded}>
       <Container>
-        <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
+        <Navbar.Brand className="navbar_brand" as={Link} to="/" onClick={() => setExpanded(false)}>
           Portafolio
         </Navbar.Brand>
         <Navbar.Toggle 
@@ -18,7 +18,7 @@ function Header({ links }) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {links.map((link, index) => (
-                 <Nav.Link key={index} href={link.href} onClick={() => setExpanded(false)}>
+                 <Nav.Link className="navbar_link" key={index} href={link.href} onClick={() => setExpanded(false)}>
                 {link.label}
               </Nav.Link>
             ))}

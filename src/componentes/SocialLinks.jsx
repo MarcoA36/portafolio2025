@@ -5,6 +5,8 @@ const SocialLinks = ({
   envelopeColor = "text-primary",
   whatsappColor = "text-success",
 }) => {
+
+  const size = 32
   return (
     <div className="social-links mt-3">
       <a
@@ -12,13 +14,13 @@ const SocialLinks = ({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaGithub size={24} className={`m-2 ${githubColor}`} />
+        <FaGithub size={size} className={`m-2 ${githubColor}`} />
       </a>
       <a href="mailto:marcoamaolo91@gmail.com">
-        <FaEnvelope size={24} className={`m-2 ${envelopeColor}`} />
+        <FaEnvelope size={size} className={`m-2 ${envelopeColor}`} />
       </a>
       <a href="https://wa.me/+5492284656640">
-        <FaWhatsapp size={24} className={`m-2 ${whatsappColor}`} />
+        <FaWhatsapp size={size} className={`m-2 ${whatsappColor}`} />
       </a>
     </div>
   );

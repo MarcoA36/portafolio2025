@@ -1,10 +1,10 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "./componentes/Footer";
-import Home from "./vistas/Home";
 import ProjectDetails from "./vistas/ProjectDetails";
 import ScrollToTop from "./componentes/ScrollToTop";
+import Home from "./vistas/Home/Home";
+import Footer from "./componentes/Footer/Footer";
 
 
 function App() {

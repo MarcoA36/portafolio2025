@@ -103,8 +103,8 @@ import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { Spinner } from "react-bootstrap";
 import { projectsData } from "../data";
-import Header from "../componentes/Header";
 import Loader from "../componentes/Loader";
+import Header from "../componentes/Header/Header";
 
 function ProjectDetails() {
   const { id } = useParams();

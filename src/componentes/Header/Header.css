@@ -1,0 +1,15 @@
+.navbar {
+  background-color: var(--bg-primary);
+}
+
+.navbar_brand,
+.navbar_link {
+  color: var(--text-primary);
+}
+
+
+
+.navbar_brand:hover,
+.navbar_link:hover {
+  color: var(--text-secondary);
+}

@@ -1,3 +1,43 @@
+:root {
+  /* 🎨 Colores primarios */
+  --color-primary-50: #f6f7f6;
+  --color-primary-100: #e1e6e1;
+  --color-primary-200: #c2cdc2;
+  --color-primary-300: #9cac9d;
+  --color-primary-400: #768b77;
+  --color-primary-500: #5c705e;
+  --color-primary-600: #485949;
+  --color-primary-700: #3c493d;
+  --color-primary-800: #313a32;
+  --color-primary-900: #2d342e;
+  --color-primary-950: #171c18;
+
+  /* 🌿 Fondos */
+  --bg-primary: var(--color-primary-500);
+  --bg-secondary: var(--color-primary-600);
+  --bg-muted: var(--color-primary-700);
+
+  /* 🔲 Bordes */
+  --border-primary: var(--color-primary-400);
+  --border-muted: var(--color-primary-300);
+  --border-strong: var(--color-primary-600);
+
+  /* 🖍️ Tipografía */
+  --text-primary: var(--color-primary-50); /* Texto principal */
+  --text-secondary: var(--color-primary-300); /* Texto secundario */
+  --text-muted: var(--color-primary-400); /* Texto desactivado */
+  --text-inverted: var(--color-primary-900); /* Texto en fondos claros */
+
+  /* 🎛️ Botones */
+  --button-bg-default: var(--color-primary-500);
+  --button-bg-hover: var(--color-primary-600);
+  --button-bg-active: var(--color-primary-700);
+  --button-border: var(--border-strong);
+}
+
+
+
+
 html, body {
   height: 100%;
   margin: 0;
@@ -7,6 +47,7 @@ html, body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-background-alt);
 }
 
 footer {
@@ -14,54 +55,17 @@ footer {
 }
 
 
-.hero-section {
-  min-height: 100vh;
-  background: #f4f4f9;
-  color: #333;
-  text-align: left;
-  padding: 50px 0;
-}
-
-.hero-section h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #333;
-}
-
-.hero-section p {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-.hero-section img {
-  max-width: 80%;
-  margin-top: 30px;
-}
-
 .animate__animated {
   opacity: 0;
   animation: fadeIn 1s forwards;
 }
 
 
-
-.projects_title {
-  cursor: pointer;
-}
-
-.projects_title:hover {
-  opacity: 0.8;
-}
-
 .markdown img {
-  /* width: 100%; */
   max-width: 100%;
   margin: 5px;
   padding: 10px 10px;
-  /* max-width: 500px;   */
   height: auto; 
-  /* object-fit: cover; */
-
 }
 
 
