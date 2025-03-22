@@ -36,6 +36,7 @@ const Home = () => {
           <Skills />
         </section>
         <section id="proyectos" className="py-5 home_section">
+          <h2 className="text-center my-4">Proyectos</h2>
           <Projects onProjectSelect={scrollToProjectDetails} />
         </section>
 

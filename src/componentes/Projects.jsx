@@ -74,21 +74,6 @@ function Projects({ onProjectSelect }) {
   const { setSelectedSkill, setSelectedProject } = useApp();
 
   return (
-    <section id="proyectos" className="py-5">
-      <h2 className="text-center my-4">
-        <span
-          onClick={() => setSelectedSkill("")}
-          style={{
-            cursor: "pointer",
-            borderRadius: "5px",
-            transition: "all 0.3s ease-in-out",
-          }}
-        >
-          Proyectos
-        </span>{" "}
-        {/* <span className="text-primary">{selectedSkill}</span> */}
-      </h2>
-
       <div className="row g-4">
         {projectsData.map((project, idx) => (
           <div key={idx} className="col-md-4 d-flex">
@@ -130,7 +115,6 @@ function Projects({ onProjectSelect }) {
           </div>
         ))}
       </div>
-    </section>
   );
 }
 

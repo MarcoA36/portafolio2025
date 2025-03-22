@@ -1,5 +1,5 @@
 .project_detail {
-  background-color: var(--border-muted);
+  background-color: var(--border-primary);
   color: var(--text-primary);
 }
 .project_detail .carrousel {
