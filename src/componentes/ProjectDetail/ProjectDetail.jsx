@@ -106,12 +106,12 @@ function ProjectDetails() {
                     className="mb-3 rounded-3"
                     src={img.src}
                     alt={`Imagen ${idx}`}
-                    style={{
-                      height: "auto", 
-                      maxHeight: "calc(100vh - 100px)", 
-                      objectFit: "contain",
-                      borderRadius: "8px",
-                    }}
+                    // style={{
+                    //   height: "auto", 
+                    //   maxHeight: "calc(100vh - 100px)", 
+                    //   objectFit: "contain",
+                    //   borderRadius: "8px",
+                    // }}
                   />
                 </Carousel.Item>
               ))}

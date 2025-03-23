@@ -31,9 +31,15 @@
   margin: auto;
   background-color: transparent;
   width: auto;
+  /* width: 100%; */
   border: none;
   box-shadow: none; 
 }
+
+.custom-modal .modal-content img{
+ width: 100%;
+}
+
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
