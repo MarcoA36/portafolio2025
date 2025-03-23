@@ -28,7 +28,7 @@ function ProjectDetails() {
                   md={12}
                   className="d-flex flex-column justify-content-center"
                 >
-                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Title className="text-center">{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
                   <Card.Text>
                     <h6 className="fw-bold mb-2">Características:</h6>
@@ -69,28 +69,6 @@ function ProjectDetails() {
           </Card>
         ))}
       </div>
-      {/* <Modal show={showCarouselModal} onHide={handleCloseCarouselModal} centered>
-        <Modal.Body>
-          {selectedProject && selectedProject.images && selectedProject.images.length > 0 && (
-            <Carousel>
-              {selectedProject.images.map((img, idx) => (
-                <Carousel.Item key={idx}>
-                  <img
-                    className="d-block w-100 mb-3 rounded-3"
-                    src={img.src}
-                    alt={`Imagen ${idx}`}
-                    style={{
-                      objectFit: "contain",
-                      // maxHeight: "80vh",
-                      borderRadius: "8px",
-                    }}
-                  />
-                </Carousel.Item>
-              ))}
-            </Carousel>
-          )}
-        </Modal.Body>
-      </Modal> */}
       <Modal
         show={showCarouselModal}
         onHide={handleCloseCarouselModal}

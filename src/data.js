@@ -1,15 +1,51 @@
 export const skillsData = [
   {
     name: "Frontend",
-    skills: ["React", "Javascript", "HTML", "CSS3", "Bootstrap"],
+    skills: ["React", "Javascript"],
   },
   {
     name: "Backend",
-    skills: ["Node.js", "PHP", "MySQL", "MongoDB"],
+    skills: ["Node.js", "PHP"],
   },
+  {
+    name: "Database",
+    skills: ["MySQL", "MongoDB"],
+  },
+
 ];
 
 export const projectsData = [
+  {
+    id: "app_chofer",
+    title: "App para choferes",
+    description:
+      "Esta aplicación permite a los choferes recibir viajes asignados en tiempo real, actualizar su ubicación y registrar los detalles de cada viaje. Además, pueden enviar el destino e importe del viaje, así como llevar un control de la caja recaudada.",
+    skills: ["React", "Node.js", "Bootstrap", "MySQL"],
+    link: "https://app-chofer-2025.vercel.app",
+    repositorio: "https://github.com/MarcoA36/app_chofer_2025",
+    features: [
+      "Los choferes reciben viajes asignados directamente en la aplicación.",
+      "El chofer puede actualizar su ubicación para que los administradores sepan en qué zona espera recibir viajes.",
+      "Permite ingresar el destino y el importe del viaje.",
+      "Registro de viajes completados y caja recaudada.",
+      "Todos los cambios se reflejan instantáneamente en el sistema de administración.",
+    ],
+    mainImage: "/images/appChofer/mapa.webp",
+    images: [
+      {
+        src: "/images/appChofer/mapa.webp",
+        description: "Mapa en tiempo real con los viajes activos.",
+      },
+      {
+        src: "/images/appChofer/home.png",
+        description: "Pantalla principal con resumen de viajes y caja.",
+      },
+      {
+        src: "/images/appChofer/viajes.webp",
+        description: "Lista de viajes realizados con detalles.",
+      },
+    ],
+  },
   {
     id: "sistema_de_gestion",
     title: "Sistema de gestión para empresa de taxis",
@@ -25,6 +61,7 @@ export const projectsData = [
       "Registro y liquidación de viajes con exportación en PDF.",
       "Autenticación segura con JWT.",
     ],
+    mainImage: "/images/sistemaGestion/tabla.png",
     images: [
       {
         src: "/images/sistemaGestion/tabla.png",
@@ -41,36 +78,6 @@ export const projectsData = [
       {
         src: "/images/sistemaGestion/moviles.png",
         description: "Gestión de móviles, activación y liquidación de viajes.",
-      },
-    ],
-  },
-  {
-    id: "app_chofer",
-    title: "App para choferes",
-    description:
-      "Esta aplicación permite a los choferes recibir viajes asignados en tiempo real, actualizar su ubicación y registrar los detalles de cada viaje. Además, pueden enviar el destino e importe del viaje, así como llevar un control de la caja recaudada.",
-    skills: ["React", "Node.js", "Bootstrap", "MySQL"],
-    link: "https://app-chofer-2025.vercel.app",
-    repositorio: "https://github.com/MarcoA36/app_chofer_2025",
-    features: [
-      "Los choferes reciben viajes asignados directamente en la aplicación.",
-      "El chofer puede actualizar su ubicación para que los administradores sepan en qué zona espera recibir viajes.",
-      "Permite ingresar el destino y el importe del viaje.",
-      "Registro de viajes completados y caja recaudada.",
-      "Todos los cambios se reflejan instantáneamente en el sistema de administración.",
-    ],
-    images: [
-      {
-        src: "/images/appChofer/mapa.webp",
-        description: "Mapa en tiempo real con los viajes activos.",
-      },
-      {
-        src: "/images/appChofer/home.png",
-        description: "Pantalla principal con resumen de viajes y caja.",
-      },
-      {
-        src: "/images/appChofer/viajes.webp",
-        description: "Lista de viajes realizados con detalles.",
       },
     ],
   },
@@ -150,10 +157,10 @@ export const projectsData = [
         src: "/images/diarioDigital/cargarNoticia.png",
         description: "Formulario para cargar nuevas noticias al sistema.",
       },
-      {
-        src: "/images/diarioDigital/homePage.png",
-        description: "Página principal con las noticias destacadas.",
-      },
+      // {
+      //   src: "/images/diarioDigital/homePage.png",
+      //   description: "Página principal con las noticias destacadas.",
+      // },
       {
         src: "/images/diarioDigital/homePage2.png",
         description: "Otra vista",

@@ -19,7 +19,7 @@ function Hero() {
   return (
     <Container className="hero rounded-3 p-1 px-lg-5 animate__animated">
       <Row className="d-flex align-items-center p-1 px-lg-5 animate__animated">
-        <Col md={8} className="text-center">
+        <Col md={8} className="text-center p-5">
           <h1 id="hero-title" className="animate__animated">
             Hola, soy Marco
           </h1>
@@ -37,7 +37,7 @@ function Hero() {
           <SocialLinks />
         </Col>
 
-        <Col md={4} className="d-flex justify-content-center">
+        <Col md={4} className="d-flex justify-content-center p-3">
           <Skills />
         </Col>
       </Row>

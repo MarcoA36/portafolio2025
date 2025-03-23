@@ -6,7 +6,7 @@ const SocialLinks = ({
   whatsappColor = "text-success",
 }) => {
 
-  const size = 32
+  const size = 34
   return (
     <div className="social-links mt-3">
       <a

@@ -15,13 +15,13 @@ function Skills({ onSkillSelect }) {
         {skillsData.map((category, idx) => (
           <div key={idx} className="text-center">
             {/* <h4>{category.name}</h4> */}
-            <div>
+            <div className="d-flex flex-column w-100 gap-1">
               {category.skills.map((skill, i) => (
                 <Badge
                   key={i}
                   pill
                   bg="dark"
-                  className="m-2 p-3 bg-opacity-75"
+                  className="p-2 m-1 bg-opacity-75"
                   onClick={() => handleClickSkill(skill)}
                   style={{ cursor: "pointer", fontSize: "1.1rem" }}
                 >
