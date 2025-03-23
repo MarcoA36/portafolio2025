@@ -1,8 +1,9 @@
-import { Container, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { useEffect } from "react";
 import SocialLinks from "../SocialLinks";
 import "./Hero.css";
 import ButtonRef from "../Buttons/ButtonRef";
+import Skills from "../Skills/Skills";
 
 function Hero() {
   useEffect(() => {
@@ -16,27 +17,30 @@ function Hero() {
   }, []);
 
   return (
-    <Container className="hero d-flex flex-column justify-content-center align-items-center text-center rounded-3 p-4 animate__animated">
-      <h1 id="hero-title" className="animate__animated">
-        Hola, soy Marco
-      </h1>
-      <p id="hero-description" className="animate__animated">
-        Desarrollador web con experiencia en React y Node.
-        <br /> Busco formar parte de proyectos donde pueda aportar valor,
-        seguir creciendo y enfrentar nuevos desafíos.
-      </p>
+    <Container className="hero rounded-3 p-1 px-lg-5 animate__animated">
+      <Row className="d-flex align-items-center p-1 px-lg-5 animate__animated">
+        <Col md={8} className="text-center">
+          <h1 id="hero-title" className="animate__animated">
+            Hola, soy Marco
+          </h1>
+          <p id="hero-description">
+            Desarrollador web con conocimientos en Frontend y Backend.
+            <br /> Busco formar parte de proyectos donde pueda aportar valor,
+            seguir creciendo y enfrentar nuevos desafíos.
+          </p>
 
+          <div className="hero_buttons">
+            <ButtonRef href="#proyectos">Ver Proyectos</ButtonRef>
+            <ButtonRef href={"/docs/CV_Marco.pdf"}>Descargar CV</ButtonRef>
+          </div>
 
-      <div className="hero_buttons">
-        <ButtonRef href="#proyectos">
-        Ver Proyectos 
-        </ButtonRef>
-        <ButtonRef href={"/docs/CV_Marco.pdf"}>
-          Descargar CV
-        </ButtonRef>
-      </div>
+          <SocialLinks />
+        </Col>
 
-      <SocialLinks />
+        <Col md={4} className="d-flex justify-content-center">
+          <Skills />
+        </Col>
+      </Row>
     </Container>
   );
 }
