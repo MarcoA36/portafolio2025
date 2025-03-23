@@ -14,8 +14,36 @@
   border: none;
 }
 
-
 .project_detail button:hover {
   background-color: var(--button-bg-hover);
 }
 
+
+
+
+.custom-modal .modal-dialog {
+  max-width: 90vw;
+  width: auto;
+}
+
+.custom-modal .modal-content {
+  margin: auto;
+  background-color: transparent;
+  width: auto;
+  border: none;
+  box-shadow: none; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+  background-color: rgba(0, 0, 0, 0.302);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}

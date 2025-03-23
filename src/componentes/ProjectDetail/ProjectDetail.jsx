@@ -1,18 +1,10 @@
-import {
-  Card,
-  Button,
-  Modal,
-  Row,
-  Col,
-  Carousel
-} from "react-bootstrap";
+import { Card, Button, Modal, Row, Col, Carousel } from "react-bootstrap";
 import { useState } from "react";
 import "./ProjectDetail.css";
 import ButtonRef from "../Buttons/ButtonRef";
 import { projectsData } from "../../data";
 
 function ProjectDetails() {
-  const [showModal, setShowModal] = useState(false);
   const [showCarouselModal, setShowCarouselModal] = useState(false); // Estado para el modal del carrusel
   const [selectedProject, setSelectedProject] = useState(null); // Estado para el proyecto seleccionado
 
@@ -32,7 +24,10 @@ function ProjectDetails() {
           <Card key={idx} className="my-4 rounded-4 p-3 project_detail">
             <Card.Body>
               <Row>
-                <Col md={12} className="d-flex flex-column justify-content-center">
+                <Col
+                  md={12}
+                  className="d-flex flex-column justify-content-center"
+                >
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
                   <Card.Text>
@@ -65,9 +60,7 @@ function ProjectDetails() {
                       </ButtonRef>
                     )}
                     {project.link && (
-                      <ButtonRef href={project.link}>
-                        Sitio
-                      </ButtonRef>
+                      <ButtonRef href={project.link}>Sitio</ButtonRef>
                     )}
                   </div>
                 </Col>
@@ -76,32 +69,7 @@ function ProjectDetails() {
           </Card>
         ))}
       </div>
-
-      {/* Modal del carrusel con las imágenes del proyecto seleccionado */}
       {/* <Modal show={showCarouselModal} onHide={handleCloseCarouselModal} centered>
-        <Modal.Body>
-          {selectedProject && selectedProject.images && selectedProject.images.length > 0 && (
-            <Row>
-              <Col>
-                {selectedProject.images.map((img, idx) => (
-                  <img
-                    key={idx}
-                    className="d-block w-100 mb-3 rounded-3"
-                    src={img.src}
-                    alt={`Imagen ${idx}`}
-                    style={{
-                      objectFit: "contain",
-                      maxHeight: "60vh", // Ajusta el tamaño de las imágenes
-                      borderRadius: "8px",
-                    }}
-                  />
-                ))}
-              </Col>
-            </Row>
-          )}
-        </Modal.Body>
-      </Modal> */}
-      <Modal show={showCarouselModal} onHide={handleCloseCarouselModal} centered>
         <Modal.Body>
           {selectedProject && selectedProject.images && selectedProject.images.length > 0 && (
             <Carousel>
@@ -113,7 +81,35 @@ function ProjectDetails() {
                     alt={`Imagen ${idx}`}
                     style={{
                       objectFit: "contain",
-                      maxHeight: "80vh", // Ajusta el tamaño de las imágenes en el carrusel
+                      // maxHeight: "80vh",
+                      borderRadius: "8px",
+                    }}
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          )}
+        </Modal.Body>
+      </Modal> */}
+      <Modal
+        show={showCarouselModal}
+        onHide={handleCloseCarouselModal}
+        centered
+        className="custom-modal"
+      >
+        <Modal.Body className="d-flex justify-content-center align-items-center">
+          {selectedProject?.images?.length > 0 && (
+            <Carousel>
+              {selectedProject.images.map((img, idx) => (
+                <Carousel.Item key={idx} className="text-center">
+                  <img
+                    className="mb-3 rounded-3"
+                    src={img.src}
+                    alt={`Imagen ${idx}`}
+                    style={{
+                      height: "auto", 
+                      maxHeight: "calc(100vh - 100px)", 
+                      objectFit: "contain",
                       borderRadius: "8px",
                     }}
                   />
