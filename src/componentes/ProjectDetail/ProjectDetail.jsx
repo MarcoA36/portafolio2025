@@ -54,11 +54,11 @@ function ProjectDetails() {
 
                   {/* Botón para abrir el modal con las imágenes */}
                   <div className="buttons d-flex gap-1 mt-3">
-                    <Button
+                    <ButtonRef
                       onClick={() => handleOpenCarouselModal(project)} // Abre el modal con el proyecto seleccionado
                     >
                       Imágenes
-                    </Button>
+                    </ButtonRef>
                     {project.repositorio && (
                       <ButtonRef href={project.repositorio}>
                         Repositorio
