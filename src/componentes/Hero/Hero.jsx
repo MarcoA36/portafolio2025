@@ -18,26 +18,35 @@ function Hero() {
 
   return (
     <Container className="hero rounded-3 p-1 px-lg-5 animate__animated">
-      <Row className="d-flex align-items-center p-1 animate__animated">
-        <Col md={8} className="text-center py-3">
-          <h1 id="hero-title" className="animate__animated">
-            Hola, soy Marco
-          </h1>
-          <p id="hero-description" className="fs-4">
-            Desarrollador web con conocimientos en Frontend y Backend.
-            <br /> Busco formar parte de proyectos donde pueda aportar valor,
-            seguir creciendo y enfrentar nuevos desafíos.
-          </p>
+      <Row className="hero_row d-flex align-items-center p-1 animate__animated">
+        <Col md={8} className="text-center">
+          <div className="d-flex flex-column gap-1">
+            <h1 id="hero-title" className="hero_title">
+              Hola, soy Marco
+            </h1>
+            <div id="hero-description" className="hero_description">
+              <h3>
+                {" "}
+                <span>Desarrollador web</span> <br /> con conocimientos en
+                Frontend y Backend
+              </h3>
+              <h4 className="text-secondary">
+                {" "}
+                Busco formar parte de proyectos donde pueda aportar valor,
+                seguir creciendo y enfrentar nuevos desafíos.
+              </h4>
+            </div>
 
-          <div className="hero_buttons">
-            <ButtonRef href="#proyectos">Ver Proyectos</ButtonRef>
-            <ButtonRef href={"/docs/CV_Marco.pdf"}>Descargar CV</ButtonRef>
+            <div className="hero_buttons">
+              <ButtonRef href="#proyectos">Ver Proyectos</ButtonRef>
+              <ButtonRef href={"/docs/CV_Marco.pdf"}>Descargar CV</ButtonRef>
+            </div>
+
+            <SocialLinks />
           </div>
-
-          <SocialLinks />
         </Col>
 
-        <Col md={4} className="d-flex justify-content-center py-3">
+        <Col md={4} className="d-flex justify-content-center">
           <Skills />
         </Col>
       </Row>
