@@ -8,7 +8,6 @@ import Hero2 from "../../componentes/Hero/Hero";
 const Home = () => {
   const projectDetailsRef = useRef(null);
   const links = [
-    { label: "Inicio", href: "#home" },
     { label: "Proyectos", href: "#proyectos" },
     { label: "Contacto", href: "#footer" },
   ];
@@ -21,11 +20,15 @@ const Home = () => {
           className="hero-section home_section d-flex align-items-center"
           id="home"
         >
-          <Hero2/>
+          <Hero2 />
         </section>
-          <section id="proyectos" ref={projectDetailsRef} className="home_section">
-            <ProjectDetails />
-          </section>
+        <section
+          id="proyectos"
+          ref={projectDetailsRef}
+          className="home_section"
+        >
+          <ProjectDetails />
+        </section>
       </main>
     </>
   );

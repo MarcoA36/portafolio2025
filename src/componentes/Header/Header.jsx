@@ -8,7 +8,7 @@ function Header({ links }) {
   return (
     <Navbar className="navbar" expand="lg" fixed="top" expanded={expanded}>
       <Container>
-        <Navbar.Brand className="navbar_brand" as={Link} to="/" onClick={() => setExpanded(false)}>
+        <Navbar.Brand className="navbar_brand" href="#home" onClick={() => setExpanded(false)}>
           Portafolio
         </Navbar.Brand>
         <Navbar.Toggle 

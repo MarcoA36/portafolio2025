@@ -28,7 +28,7 @@ function ProjectDetails() {
                   md={12}
                   className="d-flex flex-column justify-content-center"
                 >
-                  <Card.Title className="text-center">{project.title}</Card.Title>
+                  <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
                   <Card.Text>
                     <h6 className="fw-bold mb-2">Características:</h6>
