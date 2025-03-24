@@ -1,13 +1,14 @@
 import { Badge, Container } from "react-bootstrap";
-import { useApp } from "../../context/AppContext";
+import { skillsData } from "../../data";
+// import { useApp } from "../../context/AppContext";
 
 function Skills({ onSkillSelect }) {
-  const { skillsData, setSelectedSkill } = useApp();
+  // const { skillsData, setSelectedSkill } = useApp();
 
-  const handleClickSkill = (skill) => {
-    setSelectedSkill(skill);
-    onSkillSelect();
-  };
+  // const handleClickSkill = (skill) => {
+  //   setSelectedSkill(skill);
+  //   onSkillSelect();
+  // };
 
   return (
 
@@ -21,7 +22,7 @@ function Skills({ onSkillSelect }) {
                   key={i}
                   pill
                   bg="dark"
-                  className="p-2 m-1 bg-opacity-75"
+                  className="skill_item fs-5 p-2 m-1 bg-opacity-75"
                   onClick={() => handleClickSkill(skill)}
                   style={{ cursor: "pointer", fontSize: "1.1rem" }}
                 >

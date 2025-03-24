@@ -5,6 +5,7 @@
 .navbar_brand,
 .navbar_link {
   color: var(--text-primary);
+  font-weight: 500;
 }
 
 

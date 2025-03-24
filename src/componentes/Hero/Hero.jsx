@@ -23,7 +23,7 @@ function Hero() {
           <h1 id="hero-title" className="animate__animated">
             Hola, soy Marco
           </h1>
-          <p id="hero-description">
+          <p id="hero-description" className="fs-4">
             Desarrollador web con conocimientos en Frontend y Backend.
             <br /> Busco formar parte de proyectos donde pueda aportar valor,
             seguir creciendo y enfrentar nuevos desafíos.

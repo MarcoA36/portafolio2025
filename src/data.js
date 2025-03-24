@@ -11,7 +11,6 @@ export const skillsData = [
     name: "Database",
     skills: ["MySQL", "MongoDB"],
   },
-
 ];
 
 export const projectsData = [
@@ -34,11 +33,11 @@ export const projectsData = [
     images: [
       {
         src: "/images/appChofer/mapa.webp",
-        description: "Mapa en tiempo real con los viajes activos.",
+        description: "Mapa con la ubicación",
       },
       {
         src: "/images/appChofer/home.png",
-        description: "Pantalla principal con resumen de viajes y caja.",
+        description: "Pantalla principal",
       },
       {
         src: "/images/appChofer/viajes.webp",
@@ -69,7 +68,7 @@ export const projectsData = [
       },
       {
         src: "/images/sistemaGestion/mapa.png",
-        description: "Mapa en tiempo real con la ubicación de los vehículos.",
+        description: "Mapa con la ubicación de los vehículos.",
       },
       {
         src: "/images/sistemaGestion/modal.png",
@@ -98,12 +97,12 @@ export const projectsData = [
     ],
     images: [
       {
-        src: "/images/anotador/detalles.png",
-        description: "Vista de los detalles de cada viaje registrado.",
+        src: "/images/anotador/home.png",
+        description: "Pantalla principal.",
       },
       {
-        src: "/images/anotador/home.png",
-        description: "Pantalla de inicio con resumen de viajes y ganancias.",
+        src: "/images/anotador/detalles.png",
+        description: "Detalles del turno.",
       },
     ],
   },
@@ -125,12 +124,11 @@ export const projectsData = [
     images: [
       {
         src: "/images/chat/chat.png",
-        description: "Interfaz del chat con mensajes en tiempo real.",
+        description: "Conversación con un contacto",
       },
       {
         src: "/images/chat/home.png",
-        description:
-          "Pantalla de inicio con opciones de registro e inicio de sesión.",
+        description: "Ultimas conversaciones",
       },
     ],
   },
@@ -163,7 +161,7 @@ export const projectsData = [
       // },
       {
         src: "/images/diarioDigital/homePage2.png",
-        description: "Otra vista",
+        description: "Home page",
       },
     ],
   },

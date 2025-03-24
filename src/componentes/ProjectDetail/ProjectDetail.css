@@ -13,17 +13,9 @@
   background-color: var(--border-strong); 
 }
 
-.project_detail button {
-  background-color: var(--button-bg-active);
-  border: none;
-}
-
-.project_detail button:hover {
+/* .project_detail button:hover {
   background-color: var(--button-bg-hover);
-}
-
-
-
+} */
 
 .custom-modal .modal-dialog {
   max-width: 90vw;

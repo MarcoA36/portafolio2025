@@ -4,11 +4,13 @@ import "./Home.css";
 import Header from "../../componentes/Header/Header";
 
 import Hero2 from "../../componentes/Hero/Hero";
+import TitleSection from "../../componentes/TitleSection";
 
 const Home = () => {
   const projectDetailsRef = useRef(null);
   const links = [
     { label: "Proyectos", href: "#proyectos" },
+    { label: "Github", href: "https://github.com/MarcoA36" },
     { label: "Contacto", href: "#footer" },
   ];
 
@@ -27,6 +29,7 @@ const Home = () => {
           ref={projectDetailsRef}
           className="home_section"
         >
+         <TitleSection>Proyectos</TitleSection>
           <ProjectDetails />
         </section>
       </main>

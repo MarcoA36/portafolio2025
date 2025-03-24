@@ -28,13 +28,13 @@ function ProjectDetails() {
                   md={12}
                   className="d-flex flex-column justify-content-center"
                 >
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>{project.description}</Card.Text>
-                  <Card.Text>
-                    <h6 className="fw-bold mb-2">Características:</h6>
+                  <Card.Title className="card_title fs-1">{project.title}</Card.Title>
+                  <Card.Text className="card_description fs-5">{project.description}</Card.Text>
+                  <Card.Text className="card_features fs-5">
+                    <h5 className="fw-bold mb-2">Características</h5>
                     <ul className="ps-3">
                       {project.features.map((feature, i) => (
-                        <li key={i}>{feature}</li>
+                        <li key={i} >{feature}</li>
                       ))}
                     </ul>
                   </Card.Text>
@@ -80,6 +80,7 @@ function ProjectDetails() {
             <Carousel>
               {selectedProject.images.map((img, idx) => (
                 <Carousel.Item key={idx} className="text-center">
+                  <p className="text-light bg-dark p-1 rounded bg-opacity-75 mb-1">{img.description}</p>
                   <img
                     className="mb-3 rounded-3"
                     src={img.src}

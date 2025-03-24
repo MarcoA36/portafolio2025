@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import "./Header.css"
 function Header({ links }) {
   const [expanded, setExpanded] = useState(false);
