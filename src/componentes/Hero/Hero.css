@@ -1,9 +1,6 @@
-.hero {
+/* .hero {
   height: 100%;
- background-color: var(--color-card-bg);
-  text-align: left;
-  padding: 50px 0;
-}
+} */
 
 .hero h1 {
   font-size: 3rem;
