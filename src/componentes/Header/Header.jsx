@@ -17,7 +17,7 @@ function Header({ links }) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {links.map((link, index) => (
-                 <Nav.Link className="navbar_link" key={index} href={link.href} onClick={() => setExpanded(false)}>
+                 <Nav.Link className="navbar_link link" key={index} href={link.href} onClick={() => setExpanded(false)}>
                 {link.label}
               </Nav.Link>
             ))}

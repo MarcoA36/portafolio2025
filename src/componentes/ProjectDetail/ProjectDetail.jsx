@@ -5,16 +5,16 @@ import ButtonRef from "../Buttons/ButtonRef";
 import { projectsData } from "../../data";
 
 function ProjectDetails() {
-  const [showCarouselModal, setShowCarouselModal] = useState(false); // Estado para el modal del carrusel
-  const [selectedProject, setSelectedProject] = useState(null); // Estado para el proyecto seleccionado
+  const [showCarouselModal, setShowCarouselModal] = useState(false); 
+  const [selectedProject, setSelectedProject] = useState(null); 
 
   const handleOpenCarouselModal = (project) => {
-    setSelectedProject(project); // Asignar el proyecto seleccionado al estado
-    setShowCarouselModal(true); // Abre el modal del carrusel
+    setSelectedProject(project); 
+    setShowCarouselModal(true); 
   };
 
   const handleCloseCarouselModal = () => {
-    setShowCarouselModal(false); // Cierra el modal del carrusel
+    setShowCarouselModal(false);
   };
 
   return (

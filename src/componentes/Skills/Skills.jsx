@@ -1,15 +1,7 @@
 import { Badge, Container } from "react-bootstrap";
 import { skillsData } from "../../data";
-// import { useApp } from "../../context/AppContext";
 
-function Skills({ onSkillSelect }) {
-  // const { skillsData, setSelectedSkill } = useApp();
-
-  // const handleClickSkill = (skill) => {
-  //   setSelectedSkill(skill);
-  //   onSkillSelect();
-  // };
-
+function Skills() {
   return (
 
       <Container>

@@ -1,7 +1,11 @@
 export const skillsData = [
   {
+    name: "Diseño",
+    skills: ["HTML", "CSS"],
+  },
+  {
     name: "Frontend",
-    skills: ["React", "Javascript"],
+    skills: ["Javascript", "React"],
   },
   {
     name: "Backend",
@@ -116,9 +120,7 @@ export const projectsData = [
     repositorio: "https://github.com/MarcoA36/chat_mySql_front",
     features: [
       "Creación de cuenta y acceso con credenciales seguras.",
-      "Comunicación fluida sin necesidad de recargar la página.",
       "Solo los usuarios registrados pueden enviarse mensajes entre sí.",
-      "Interfaz diseñada para su uso en celulares como una PWA.",
       "Almacenamiento del historial de chats para su consulta posterior.",
     ],
     images: [

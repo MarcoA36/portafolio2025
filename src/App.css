@@ -48,7 +48,7 @@ html, body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-primary-200);
+  background-color: var(--color-primary-100);
 }
 
 footer {
