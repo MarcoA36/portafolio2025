@@ -1,5 +1,4 @@
 :root {
-  /* 🎨 Colores primarios */
   --color-primary-50: #f6f7f6;
   --color-primary-100: #e1e6e1;
   --color-primary-200: #c2cdc2;
@@ -12,24 +11,22 @@
   --color-primary-900: #2d342e;
   --color-primary-950: #171c18;
 
-  /* 🌿 Fondos */
   --bg-default: var(--color-primary-300);
   --bg-primary: var(--color-primary-500);
   --bg-secondary: var(--color-primary-600);
   --bg-muted: var(--color-primary-700);
 
-  /* 🔲 Bordes */
   --border-primary: var(--color-primary-400);
   --border-muted: var(--color-primary-300);
   --border-strong: var(--color-primary-600);
 
-  /* 🖍️ Tipografía */
-  --text-primary: var(--color-primary-50); /* Texto principal */
-  --text-secondary: var(--color-primary-300); /* Texto secundario */
-  --text-muted: var(--color-primary-400); /* Texto desactivado */
-  --text-inverted: var(--color-primary-900); /* Texto en fondos claros */
+ 
+  --text-primary: var(--color-primary-50); 
+  --text-secondary: var(--color-primary-300); 
+  --text-muted: var(--color-primary-400);
+  --text-inverted: var(--color-primary-900); 
 
-  /* 🎛️ Botones */
+
   --button-bg-default: var(--color-primary-500);
   --button-bg-hover: var(--color-primary-600);
   --button-bg-active: var(--color-primary-700);
@@ -44,12 +41,24 @@ html, body {
   scroll-behavior: smooth;
 }
 
+/* .app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary-50);
+} */
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-primary-100);
+  background: linear-gradient(
+    180deg,
+    var(--color-primary-50) 0%,
+    var(--color-primary-400) 30%,
+    var(--color-primary-700) 100%
+  );
 }
+
 
 footer {
   margin-top: auto;
