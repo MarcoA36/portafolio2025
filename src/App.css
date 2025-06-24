@@ -11,6 +11,14 @@
   --color-primary-900: #2d342e;
   --color-primary-950: #171c18;
 
+
+  --color-primary: #1f2937;
+  --color-accent: #f97316;
+  --color-text-light: #f3f4f6;
+  --color-text-dark: #111827;
+  --color-bg: #111827;
+  --color-card: #374151;
+
   --bg-default: var(--color-primary-300);
   --bg-primary: var(--color-primary-500);
   --bg-secondary: var(--color-primary-600);
@@ -41,12 +49,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* .app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-primary-50);
-} */
+
 .app {
   min-height: 100vh;
   display: flex;
@@ -54,8 +57,9 @@ html, body {
   background: linear-gradient(
     180deg,
     var(--color-primary-50) 0%,
-    var(--color-primary-400) 30%,
-    var(--color-primary-700) 100%
+    var(--color-primary-300) 30%,
+    var(--color-primary-400) 60%,
+    var(--color-primary-500) 100%
   );
 }
 

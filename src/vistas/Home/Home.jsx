@@ -27,9 +27,11 @@ const Home = () => {
         <section
           id="proyectos"
           ref={projectDetailsRef}
-          className="home_section"
+          className="projects_section"
         >
-         <TitleSection>Proyectos</TitleSection>
+          <div className="section-title-wrapper">
+            <div className="section-title-box">Proyectos</div>
+          </div>
           <ProjectDetails />
         </section>
       </main>
