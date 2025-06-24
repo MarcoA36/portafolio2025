@@ -1,0 +1,132 @@
+.contact-wrapper {
+    width: 100%;
+    padding: 60px 40px;
+    background-color: var(--color-primary-600);
+    border-radius: 20px;
+    color: var(--color-text-light);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .contact-left,
+  .contact-right {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .form-row input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #d3d3d3;
+    font-size: 0.95rem;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #d3d3d3;
+    font-size: 0.95rem;
+  }
+  
+  .form-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn-accent {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn-reset {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .contact-right .info-block {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: flex-start;
+  }
+  
+  .info-block .icon {
+    font-size: 1.4rem;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+  }
+  
+  .info-block h5 {
+    margin: 0 0 6px;
+    color: var(--color-accent);
+  }
+  
+  .info-block a {
+    color: var(--color-link);
+    text-decoration: underline;
+    font-size: 0.95rem;
+  }
+  
+  .info-block p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-buttons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .btn-accent,
+    .btn-reset {
+      width: 100%;
+    }
+  }
+  

@@ -2,9 +2,8 @@ import React, { useRef } from "react";
 import ProjectDetails from "../../componentes/ProjectDetail/ProjectDetail";
 import "./Home.css";
 import Header from "../../componentes/Header/Header";
-
 import Hero2 from "../../componentes/Hero/Hero";
-import TitleSection from "../../componentes/TitleSection";
+import Contact from "../../componentes/Contact/Contact";
 
 const Home = () => {
   const projectDetailsRef = useRef(null);
@@ -33,6 +32,17 @@ const Home = () => {
             <div className="section-title-box">Proyectos</div>
           </div>
           <ProjectDetails />
+        </section>
+
+        <section
+          id="contacto"
+          // ref={projectDetailsRef}
+          className="contact_section"
+        >
+          <div className="section-title-wrapper">
+            <div className="section-title-box">Contacto</div>
+          </div>
+          <Contact />
         </section>
       </main>
     </>

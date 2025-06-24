@@ -1,17 +1,28 @@
-.projects_section {
-    min-height: 100vh;
+.projects_section,
+.contact_section {
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 60px 40px 40px;
-    margin: 20px 0;
-    background-color: var(--color-primary-800);
+    margin: 80px 0;
+ 
     border-radius: 20px;
     position: relative;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   }
+
+
+  .projects_section {
+       background-color: var(--color-primary-800);
+  }
   
+
+  .contact_section {
+    background-color: var(--color-primary-800);
+}
+
   /* Title section styles */
   .section-title-wrapper {
     position: absolute;
@@ -34,6 +45,8 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   }
+
+
 
 
 

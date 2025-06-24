@@ -40,7 +40,7 @@ function ProjectDetails() {
               <div
                 className="project-image"
                 style={{
-                  backgroundImage: `url(${project.images?.[0]?.src})`,
+                  backgroundImage: `url(${project.mainImage})`,
                 }}
               />
               <Card.Body className="d-flex flex-column">

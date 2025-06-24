@@ -5,9 +5,9 @@ function Header({ links }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <Navbar className="navbar" expand="lg" fixed="top" expanded={expanded}>
+    <Navbar className="navbar bg-light text-dark fw-semibold" expand="lg" fixed="top" expanded={expanded}>
       <Container>
-        <Navbar.Brand className="navbar_brand" href="#home" onClick={() => setExpanded(false)}>
+        <Navbar.Brand className="navbar_brand " href="#home" onClick={() => setExpanded(false)}>
           Portafolio
         </Navbar.Brand>
         <Navbar.Toggle 

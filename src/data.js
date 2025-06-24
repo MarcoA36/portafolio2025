@@ -19,6 +19,26 @@ export const skillsData = [
 
 export const projectsData = [
   {
+    id: "zona_remis",
+    title: "Sitio Web para empresa",
+    description:
+      "Sitio web informativo para agencia de remis.",
+    skills: ["HTML", "CSS3", "React"],
+    link: "https://sp-remisnn.vercel.app/",
+    repositorio: "https://github.com/MarcoA36/sp_remisnn",
+    features: [
+      ".",,
+    ],
+    mainImage: "/images/zonaPage/banner_zona.webp",
+    images: [
+      {
+        src: "/images/zonaPage/banner_zona.webp",
+        description: "Banner",
+      }
+
+    ],
+  },
+  {
     id: "app_chofer",
     title: "App para choferes",
     description:
@@ -99,6 +119,7 @@ export const projectsData = [
       "Permite modificar o borrar registros con facilidad.",
       "Permite exportar el detalle del turno en pdf para compartir o almacenar.",
     ],
+    mainImage: "/images/anotador/home.png",
     images: [
       {
         src: "/images/anotador/home.png",
@@ -123,6 +144,7 @@ export const projectsData = [
       "Solo los usuarios registrados pueden enviarse mensajes entre sí.",
       "Almacenamiento del historial de chats para su consulta posterior.",
     ],
+    mainImage: "/images/chat/chat.png",
     images: [
       {
         src: "/images/chat/chat.png",
@@ -148,6 +170,7 @@ export const projectsData = [
       "Sistema de mensajería interna entre redactores y administradores.",
       "Control de publicación por parte del administrador para decidir la ubicación de la noticia en la página principal.",
     ],
+    mainImage: "/images/diarioDigital/entradas.png",
     images: [
       {
         src: "/images/diarioDigital/entradas.png",
