@@ -17,40 +17,30 @@ function Hero() {
   }, []);
 
   return (
-    <Container className="hero rounded-3 p-1 px-lg-5 animate__animated">
-      <Row className="hero_row d-flex align-items-center p-1 animate__animated">
-        <Col md={8} className="text-center">
-          <div className="d-flex flex-column gap-1">
-            <h1 id="hero-title" className="hero_title">
-              Hola, soy Marco
-            </h1>
-            <div id="hero-description" className="hero_description">
-              <h3>
-                {" "}
-                <span>Desarrollador web</span> <br /> con conocimientos en
-                Frontend y Backend
-              </h3>
-              <h4 className="text-secondary">
-                {" "}
-                Busco formar parte de proyectos donde pueda aportar valor,
-                seguir creciendo y enfrentar nuevos desafíos.
-              </h4>
-            </div>
+    <Container fluid className="hero-section px-4 px-lg-5">
+  <Row className="hero-content align-items-center">
+    <Col lg={7} className="text-start text-lg-start d-flex flex-column gap-3">
+      <h1 className="hero-title">Hola, soy <span>Marco</span></h1>
+      <h3 className="hero-subtitle">Desarrollador Web Full Stack</h3>
+      <p className="hero-description">
+        Me especializo en crear experiencias digitales fluidas y atractivas.<br />
+        Apasionado por la tecnología, siempre listo para nuevos desafíos.
+      </p>
+      <div className="hero-buttons d-flex flex-wrap gap-3">
+        <ButtonRef href="#proyectos">Ver Proyectos</ButtonRef>
+        <ButtonRef href="/docs/CV_Marco.pdf">Descargar CV</ButtonRef>
+      </div>
+      {/* <SocialLinks githubColor="text-light"/> */}
+      <SocialLinks />
+    </Col>
 
-            <div className="hero_buttons">
-              <ButtonRef href="#proyectos">Ver Proyectos</ButtonRef>
-              <ButtonRef href={"/docs/CV_Marco.pdf"}>Descargar CV</ButtonRef>
-            </div>
+    <Col lg={5} className="d-flex justify-content-center">
+    
+      <Skills />
+    </Col>
+  </Row>
+</Container>
 
-            <SocialLinks />
-          </div>
-        </Col>
-
-        <Col md={4} className="d-flex justify-content-center">
-          <Skills />
-        </Col>
-      </Row>
-    </Container>
   );
 }
 

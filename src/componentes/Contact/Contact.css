@@ -76,7 +76,14 @@
     border-radius: 6px;
     cursor: pointer;
   }
+  /* .contact-left {
+    max-width: 500px;
+}
   
+.contact-right {
+    max-width: 500px;
+} */
+
   .contact-right .info-block {
     display: flex;
     gap: 15px;
@@ -107,6 +114,16 @@
     margin: 0;
     font-size: 0.95rem;
   }
+
+  .map-container {
+    margin-top: 1rem;
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
   
   /* Responsive */
   @media (max-width: 768px) {

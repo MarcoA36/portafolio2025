@@ -19,6 +19,7 @@
   height: 180px;
   background-size: cover;
   background-position: center;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
