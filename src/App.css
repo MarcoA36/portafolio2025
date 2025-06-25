@@ -82,13 +82,15 @@
 
   --color-primary: #1f2933;
   --color-bg: #0f172a;
-
+ 
   --color-accent: #f97316;         /* naranja principal */
   --color-accent-hover: #d9480f;   /* tono más oscuro para hover */
 
   --color-text-light: #f8fafc;
   --color-text-dark: #111827;
-  --color-card: #334155;
+  --color-card2: #334155;
+  --color-card3:  #4f5257;
+  --color-card: #3f4e3f;  
 }
 
 
@@ -96,6 +98,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -111,6 +114,7 @@ html, body {
     var(--color-primary-400) 60%,
     var(--color-primary-500) 100%
   );
+  padding: 0;
 }
 
 

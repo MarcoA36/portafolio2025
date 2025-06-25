@@ -16,7 +16,10 @@ const Home = () => {
   return (
     <>
       <Header links={links} />
-      <main className="container mt-4 home_main">
+      {/* <main className="container mt-4 home_main"> */}
+      <main className="container-sm mt-4 home_main">
+
+
         <section
           className="hero-section home_section d-flex align-items-center"
           id="home"
