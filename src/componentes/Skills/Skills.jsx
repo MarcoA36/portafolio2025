@@ -1,6 +1,6 @@
 import { Badge, Container } from "react-bootstrap";
 import { skillsData } from "../../data";
-
+import "./Skills.css"
 function Skills() {
   return (
 

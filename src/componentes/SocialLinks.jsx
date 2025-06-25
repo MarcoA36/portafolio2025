@@ -8,7 +8,7 @@ const SocialLinks = ({
 
   const size = 34
   return (
-    <div className="social-links mt-3">
+    <div className="social-links">
       <a
         href="https://github.com/MarcoA36"
         target="_blank"

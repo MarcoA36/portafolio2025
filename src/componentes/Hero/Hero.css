@@ -40,6 +40,22 @@
   
   .hero-buttons {
     margin-top: 1.5rem;
+
+    /* max-width: 500px; */
+  }
+
+  .hero-buttons a {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.25rem;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+  }
+  
+  .hero-buttons a:hover {
+    background-color: #d94e00;
   }
   
   @keyframes fadeInUp {
@@ -54,8 +70,8 @@
   }
   
   /* Responsive tweaks */
-  @media (max-width: 768px) {
-    .hero-title {
+  @media (max-width: 992px) {
+    /* .hero-title {
       font-size: 2.2rem;
     }
   
@@ -71,9 +87,13 @@
       padding: 2rem 1rem;
       text-align: center;
     }
-  
-    .hero-buttons {
-      justify-content: center;
-    }
+   */
+
+   .hero-buttons {
+    justify-content: center;
+
+    /* max-width: 500px; */
+  }
+
   }
   

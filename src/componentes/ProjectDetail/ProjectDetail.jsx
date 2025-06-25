@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-  Card,
-  Button,
-  Row,
-  Col,
-  Modal,
-  Carousel
-} from "react-bootstrap";
+import { Card, Button, Row, Col, Modal, Carousel } from "react-bootstrap";
 import { projectsData } from "../../data";
 import "./ProjectDetail.css";
 import { FaGithub, FaImage, FaExternalLinkAlt } from "react-icons/fa";
@@ -44,7 +37,9 @@ function ProjectDetails() {
                 }}
               />
               <Card.Body className="d-flex flex-column">
-                <Card.Title className="project-title">{project.title}</Card.Title>
+                <Card.Title className="project-title">
+                  {project.title}
+                </Card.Title>
 
                 <Card.Text className="project-description">
                   {project.description}
@@ -58,7 +53,7 @@ function ProjectDetails() {
                   ))}
                 </div>
 
-                <div className="buttons d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                <div className="buttons d-flex justify-content-center gap-2 mt-auto">
                   {project.images?.length > 0 && (
                     <Button
                       variant="secondary"
@@ -82,13 +77,14 @@ function ProjectDetails() {
                   {project.link && (
                     <Button
                       variant="accent"
-                      className="learn-more-btn d-flex align-items-center gap-2"
+                      className="learn-more-btn d-flex align-items-center gap-2 icon-btn"
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FaExternalLinkAlt />
-                      Visitar
+                      {/* <span>Visitar</span> */}
+                      <span className="d-none d-sm-inline w-auto">Visitar</span>
                     </Button>
                   )}
                 </div>

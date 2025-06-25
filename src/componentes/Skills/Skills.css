@@ -1,0 +1,18 @@
+.skill_item {
+    background-color: #1f2937; /* gris oscuro */
+    color: #f3f4f6; /* casi blanco */
+    border: 1px solid transparent;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+  
+  .skill_item:hover {
+    background-color: var(--color-accent); /* tu color principal */
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 10px var(--color-accent);
+  }
+  

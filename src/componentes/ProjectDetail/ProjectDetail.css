@@ -58,7 +58,7 @@
 }
 
 
-
+/* 
 .icon-btn {
   background-color: #4b5563;
   color: white;
@@ -72,6 +72,29 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
+} */
+
+
+
+.icon-btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.learn-more-btn {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #d94e00;
 }
 
 .icon-btn:hover {
@@ -79,7 +102,7 @@
   color: var(--color-accent);
 }
 
-.learn-more-btn {
+/* .learn-more-btn {
   background-color: var(--color-accent);
   color: white;
   padding: 0.5rem 1.25rem;
@@ -94,7 +117,7 @@
 
 .learn-more-btn:hover {
   background-color: #ea580c;
-}
+} */
 
 
 
