@@ -76,7 +76,7 @@ function ProjectDetails() {
                   )}
                   {project.link && (
                     <Button
-                      variant="accent"
+                      // variant="accent"
                       className="learn-more-btn d-flex align-items-center gap-2 icon-btn"
                       href={project.link}
                       target="_blank"
@@ -84,7 +84,7 @@ function ProjectDetails() {
                     >
                       <FaExternalLinkAlt />
                       {/* <span>Visitar</span> */}
-                      <span className="d-none d-sm-inline w-auto">Visitar</span>
+                      <span>Visitar</span>
                     </Button>
                   )}
                 </div>

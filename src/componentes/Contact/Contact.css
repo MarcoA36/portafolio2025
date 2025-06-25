@@ -128,7 +128,7 @@
   /* Responsive */
   @media (max-width: 768px) {
     .contact-wrapper {
-        padding: 60px 40px;
+        padding: 40px 20px;
       }
     .contact-content {
       flex-direction: column;
