@@ -135,12 +135,6 @@
 
 
 @media (max-width: 768px) {
-  .project-grid {
-    padding: 0.5rem 1rem;
-  }
 
-  .project-card {
-    padding: 1rem;
-  }
 
 }

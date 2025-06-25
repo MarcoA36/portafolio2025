@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --color-primary-50: #f6f7f6;
   --color-primary-100: #e1e6e1;
   --color-primary-200: #c2cdc2;
@@ -38,13 +38,13 @@
   --button-bg-default: var(--color-primary-500);
   --button-bg-hover: var(--color-primary-600);
   --button-bg-active: var(--color-primary-700);
-}
+} */
 
 
 
 
-
- /* :root {
+/* 
+ :root {
   --color-primary-50: #f5f7fa;
   --color-primary-100: #e4e7eb;
   --color-primary-200: #cbd2d9;
@@ -67,6 +67,30 @@
   --color-text-dark: #111827;
   --color-card: #334155;
 } */
+:root {
+  --color-primary-50: #f5f7fa;
+  --color-primary-100: #e4e7eb;
+  --color-primary-200: #cbd2d9;
+  --color-primary-300: #9aa5b1;
+  --color-primary-400: #7b8794;
+  --color-primary-500: #616e7c;
+  --color-primary-600: #52606d;
+  --color-primary-700: #3e4c59;
+  --color-primary-800: #323f4b;
+  --color-primary-900: #1f2933;
+  --color-primary-950: #12191f;
+
+  --color-primary: #1f2933;
+  --color-bg: #0f172a;
+
+  --color-accent: #f97316;         /* naranja principal */
+  --color-accent-hover: #d9480f;   /* tono más oscuro para hover */
+
+  --color-text-light: #f8fafc;
+  --color-text-dark: #111827;
+  --color-card: #334155;
+}
+
 
 
 html, body {
