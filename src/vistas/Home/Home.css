@@ -35,7 +35,8 @@
   }
   
   .section-title-box {
-    background-color: var(--color-accent);
+    /* background-color: var(--color-accent); */
+    background-color: var(--color-accent-hover);
     padding: 10px 30px;
     color: white;
     font-weight: bold;

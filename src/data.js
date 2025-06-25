@@ -29,7 +29,8 @@ export const projectsData = [
     features: [
       ".",,
     ],
-    mainImage: "/images/zonaPage/banner_zona.webp",
+    // mainImage: "/images/zonaPage/banner_zona.webp",
+    mainImage: "/images/zonaPage/thumbail.png",
     images: [
       {
         src: "/images/zonaPage/banner_zona.webp",
@@ -53,7 +54,8 @@ export const projectsData = [
       "Registro de viajes completados y caja recaudada.",
       "Todos los cambios se reflejan instantáneamente en el sistema de administración.",
     ],
-    mainImage: "/images/appChofer/mapa.webp",
+    // mainImage: "/images/appChofer/mapa.webp",
+    mainImage: "/images/appChofer/thumbail.png",    
     images: [
       {
         src: "/images/appChofer/mapa.webp",
@@ -84,7 +86,8 @@ export const projectsData = [
       "Registro y liquidación de viajes con exportación en PDF.",
       "Autenticación segura con JWT.",
     ],
-    mainImage: "/images/sistemaGestion/tabla.png",
+    // mainImage: "/images/sistemaGestion/tabla.png",
+    mainImage: "/images/sistemaGestion/thumbail.png",
     images: [
       {
         src: "/images/sistemaGestion/tabla.png",
@@ -119,7 +122,8 @@ export const projectsData = [
       "Permite modificar o borrar registros con facilidad.",
       "Permite exportar el detalle del turno en pdf para compartir o almacenar.",
     ],
-    mainImage: "/images/anotador/home.png",
+    // mainImage: "/images/anotador/home.png",
+    mainImage: "/images/anotador/thumbail.png",
     images: [
       {
         src: "/images/anotador/home.png",
@@ -144,7 +148,8 @@ export const projectsData = [
       "Solo los usuarios registrados pueden enviarse mensajes entre sí.",
       "Almacenamiento del historial de chats para su consulta posterior.",
     ],
-    mainImage: "/images/chat/chat.png",
+    // mainImage: "/images/chat/chat.png",
+    mainImage: "/images/chat/thumbail.png",
     images: [
       {
         src: "/images/chat/chat.png",
@@ -170,7 +175,8 @@ export const projectsData = [
       "Sistema de mensajería interna entre redactores y administradores.",
       "Control de publicación por parte del administrador para decidir la ubicación de la noticia en la página principal.",
     ],
-    mainImage: "/images/diarioDigital/entradas.png",
+    // mainImage: "/images/diarioDigital/entradas.png",
+    mainImage: "/images/diarioDigital/thumbail.png",
     images: [
       {
         src: "/images/diarioDigital/entradas.png",
