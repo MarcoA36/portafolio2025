@@ -38,11 +38,9 @@
     color: var(--color-text-dark);
   }
   
-  .hero-buttons {
-    margin-top: 1.5rem;
-
-    /* max-width: 500px; */
-  }
+  /* .hero-buttons {
+    margin-top: 1.1rem;
+  } */
 
   .hero-buttons a {
     background-color: var(--color-accent);

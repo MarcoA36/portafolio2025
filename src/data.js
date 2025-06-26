@@ -38,6 +38,7 @@ export const projectsData = [
       }
 
     ],
+    date: "2025"
   },
   {
     id: "app_chofer",
@@ -70,6 +71,7 @@ export const projectsData = [
         description: "Lista de viajes realizados con detalles.",
       },
     ],
+    date: "2025"
   },
   {
     id: "sistema_de_gestion",
@@ -106,6 +108,7 @@ export const projectsData = [
         description: "Gestión de móviles, activación y liquidación de viajes.",
       },
     ],
+    date: "2024"
   },
   {
     id: "anotador_de_viajes",
@@ -134,6 +137,7 @@ export const projectsData = [
         description: "Detalles del turno.",
       },
     ],
+    date: "2024"
   },
   {
     id: "chat",
@@ -160,6 +164,7 @@ export const projectsData = [
         description: "Ultimas conversaciones",
       },
     ],
+    date: "2024"
   },
   {
     id: "diario_digital",
@@ -195,5 +200,6 @@ export const projectsData = [
         description: "Home page",
       },
     ],
+    date: "2023"
   },
 ];

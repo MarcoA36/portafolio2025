@@ -14,3 +14,46 @@
 .navbar_link:hover {
   color: var(--text-secondary);
 } */
+
+.navbar-custom {
+  padding: 0.75rem 1rem;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-custom .navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.nav-link-custom {
+  margin-left: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: var(--color-accent) !important;
+}
+
+.nav-link-custom::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
