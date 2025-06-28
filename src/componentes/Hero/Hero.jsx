@@ -20,20 +20,19 @@ function Hero() {
     <Row className="hero-content align-items-center">
       {/* <Col lg={7} className="text-center text-lg-start d-flex flex-column gap-3"> */}
       <Col
-  lg={7}
-  className="text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start gap-3"
->
-
+        lg={7}
+        className="text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start gap-3"
+      >
         <h1 className="hero-title">
           Hola, soy <span>Marco</span>
         </h1>
         <h3 className="hero-subtitle">Desarrollador Web Full Stack</h3>
         <p className="hero-description d-none d-lg-block">
-  Me especializo en crear experiencias digitales fluidas y atractivas.
-  <br />
-  Apasionado por la tecnología, siempre listo para nuevos desafíos.
-</p>
-       <SocialLinks />
+          Me especializo en crear experiencias digitales fluidas y atractivas.
+          <br />
+          Apasionado por la tecnología, siempre listo para nuevos desafíos.
+        </p>
+        <SocialLinks />
         <div className="hero-buttons d-flex flex-column flex-sm-row flex-wrap gap-3 mb-3">
           <ButtonRef href="#proyectos" className="flex-fill text-center">
             Ver Proyectos
@@ -45,7 +44,6 @@ function Hero() {
             Descargar CV
           </ButtonRef>
         </div>
-       
       </Col>
 
       <Col lg={5} className="d-flex justify-content-center">
