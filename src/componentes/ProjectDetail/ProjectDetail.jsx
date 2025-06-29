@@ -114,7 +114,7 @@ function ProjectDetails() {
                     alt={`Imagen ${idx}`}
                     style={{
                       height: "auto",
-                      maxHeight: "80vh",
+                      // maxHeight: "80vh",
                       objectFit: "contain",
                       borderRadius: "8px",
                       maxWidth: "100%",

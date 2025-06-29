@@ -20,31 +20,29 @@ export const skillsData = [
 export const projectsData = [
   {
     id: "zona_remis",
-    title: "Sitio Web para empresa",
+    title: "Sitio Web Corporativo para Agencia de Remis",
     description:
-      "Sitio web informativo para agencia de remis.",
+      "Desarrollo de un sitio web informativo y responsivo para una empresa de transporte, enfocado en brindar detalles claros sobre los servicios ofrecidos y facilitar el contacto con los clientes.",
+
     skills: ["HTML", "CSS3", "React"],
     link: "https://sp-remisnn.vercel.app/",
     repositorio: "https://github.com/MarcoA36/sp_remisnn",
-    features: [
-      ".",,
-    ],
+    features: [".", ,],
     // mainImage: "/images/zonaPage/banner_zona.webp",
     mainImage: "/images/zonaPage/thumbail.png",
     images: [
       {
         src: "/images/zonaPage/banner_zona.webp",
         description: "Banner",
-      }
-
+      },
     ],
-    date: "2025"
+    date: "2025",
   },
   {
     id: "app_chofer",
-    title: "App para choferes",
+    title: "Interfaz web para choferes",
     description:
-      "Esta aplicación permite a los choferes recibir viajes asignados en tiempo real, actualizar su ubicación y registrar los detalles de cada viaje. Además, pueden enviar el destino e importe del viaje, así como llevar un control de la caja recaudada.",
+      "Interfaz web mobile-first desarrollada con React.js, diseñada para que los choferes puedan gestionar sus viajes desde el celular.",
     skills: ["React", "Node.js", "Bootstrap", "MySQL"],
     link: "https://app-chofer-2025.vercel.app",
     repositorio: "https://github.com/MarcoA36/app_chofer_2025",
@@ -56,7 +54,7 @@ export const projectsData = [
       "Todos los cambios se reflejan instantáneamente en el sistema de administración.",
     ],
     // mainImage: "/images/appChofer/mapa.webp",
-    mainImage: "/images/appChofer/thumbail.png",    
+    mainImage: "/images/appChofer/thumbail.png",
     images: [
       {
         src: "/images/appChofer/mapa.webp",
@@ -71,13 +69,14 @@ export const projectsData = [
         description: "Lista de viajes realizados con detalles.",
       },
     ],
-    date: "2025"
+    date: "2025",
   },
   {
     id: "sistema_de_gestion",
-    title: "Sistema de gestión para empresa de taxis",
+    title: "Sistema de Gestión para Empresa de transporte",
     description:
-      "Sistema para administrar una empresa de taxis con asignación de viajes, seguimiento en tiempo real y comunicación entre administradores y choferes.",
+      "Sitio web desarrollado para optimizar la administración de una empresa de remis, con funciones de asignación de viajes, seguimiento en tiempo real y comunicación integrada entre administradores y choferes.",
+
     skills: ["React", "Node.js", "Bootstrap", "MySQL"],
     link: "https://agencia-2024-cliente.vercel.app/",
     repositorio: "https://github.com/MarcoA36/agencia_2024_cliente",
@@ -108,13 +107,14 @@ export const projectsData = [
         description: "Gestión de móviles, activación y liquidación de viajes.",
       },
     ],
-    date: "2024"
+    date: "2024",
   },
   {
     id: "anotador_de_viajes",
     title: "Anotador de viajes para choferes",
     description:
-      "Aplicación diseñada para que los choferes puedan registrar fácilmente los viajes realizados desde su celular. Permite calcular los gastos y la ganancia de forma intuitiva, ofreciendo una herramienta simple pero efectiva para el control diario de ingresos.",
+    "Interfaz web mobile-first para que los choferes registren viajes, calculen ingresos y lleven un control diario de forma rápida y sencilla desde sus teléfonos.",
+  
     skills: ["React", "Bootstrap"],
     link: "https://www.notechofer.online",
     repositorio: "https://github.com/MarcoA36/anotadorDeViajes",
@@ -137,13 +137,14 @@ export const projectsData = [
         description: "Detalles del turno.",
       },
     ],
-    date: "2024"
+    date: "2024",
   },
   {
     id: "chat",
     title: "Chat en Tiempo Real",
     description:
-      "Aplicación web diseñada para ser utilizada en dispositivos móviles como una plataforma de mensajería simple y efectiva. Permite a los usuarios registrarse, iniciar sesión y mantener conversaciones privadas en tiempo real con otros usuarios registrados.",
+      "Sitio web responsivo pensado para dispositivos móviles que funciona como una plataforma de mensajería simple y efectiva. Permite a los usuarios registrarse, iniciar sesión y mantener conversaciones privadas en tiempo real con otros usuarios registrados.",
+    
     skills: ["React", "Node.js", "Bootstrap", "MySQL", "MongoDB"],
     link: "https://chat-my-sql-front.vercel.app",
     repositorio: "https://github.com/MarcoA36/chat_mySql_front",
@@ -164,7 +165,7 @@ export const projectsData = [
         description: "Ultimas conversaciones",
       },
     ],
-    date: "2024"
+    date: "2024",
   },
   {
     id: "diario_digital",
@@ -200,6 +201,6 @@ export const projectsData = [
         description: "Home page",
       },
     ],
-    date: "2023"
+    date: "2023",
   },
 ];
