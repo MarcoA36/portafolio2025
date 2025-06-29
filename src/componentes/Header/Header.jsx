@@ -10,9 +10,9 @@
 //         <Navbar.Brand className="navbar_brand " href="#home" onClick={() => setExpanded(false)}>
 //           Portafolio
 //         </Navbar.Brand>
-//         <Navbar.Toggle 
-//           aria-controls="basic-navbar-nav" 
-//           onClick={() => setExpanded(!expanded)} 
+//         <Navbar.Toggle
+//           aria-controls="basic-navbar-nav"
+//           onClick={() => setExpanded(!expanded)}
 //         />
 //         <Navbar.Collapse id="basic-navbar-nav">
 //           <Nav className="ms-auto">
@@ -30,12 +30,9 @@
 
 // export default Header;
 
-
-
-
 import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { FaLaptopCode } from "react-icons/fa"; // Icono opcional
+import { FaLaptopCode, FaUser } from "react-icons/fa"; // Icono opcional
 import "./Header.css";
 
 function Header({ links }) {
@@ -49,13 +46,32 @@ function Header({ links }) {
       className="navbar-custom shadow-sm bg-light"
     >
       <Container>
+        {/* <Navbar.Brand
+          href="#home"
+          className="d-flex align-items-center gap-2 brand-name"
+          onClick={() => setExpanded(false)}
+        >
+          <FaUser size={24} />
+          <span>Marco Amaolo</span>
+        </Navbar.Brand> */}
         <Navbar.Brand
           href="#home"
           className="d-flex align-items-center gap-2 brand-name"
           onClick={() => setExpanded(false)}
         >
-          <FaLaptopCode size={24} />
-          <span>Marco Amaolo</span>
+          <div
+            className="d-flex justify-content-center align-items-center bg-dark text-white rounded-circle"
+            style={{
+              width: "36px",
+              height: "36px",
+              fontWeight: "bold",
+              fontSize: "1rem",
+              boxShadow: "0 0 4px rgba(0,0,0,0.3)",
+            }}
+          >
+              <FaUser size={24} />
+          </div>
+          <span className="fw-bold fs-5">Marco Amaolo</span>
         </Navbar.Brand>
 
         <Navbar.Toggle
