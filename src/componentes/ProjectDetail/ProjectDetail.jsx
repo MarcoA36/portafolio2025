@@ -94,7 +94,7 @@ function ProjectDetails() {
         ))}
       </Row>
 
-      <Modal
+      {/* <Modal
         show={showCarouselModal}
         onHide={handleCloseCarouselModal}
         centered
@@ -104,22 +104,24 @@ function ProjectDetails() {
           {selectedProject?.images?.length > 0 ? (
             <Carousel>
               {selectedProject.images.map((img, idx) => (
-                <Carousel.Item key={idx} className="text-center">
-                  <p className="text-light bg-dark p-1 rounded bg-opacity-75 mb-2">
-                    {img.description}
-                  </p>
-                  <img
-                    className="mb-3 rounded-3"
-                    src={img.src}
-                    alt={`Imagen ${idx}`}
-                    style={{
-                      height: "auto",
-                      // maxHeight: "80vh",
-                      objectFit: "contain",
-                      borderRadius: "8px",
-                      maxWidth: "100%",
-                    }}
-                  />
+                <Carousel.Item key={idx}>
+                  <div className="d-flex flex-column align-items-center justify-content-center">
+                    <p className="text-light bg-dark p-1 rounded bg-opacity-75 mb-2 text-center">
+                      {img.description}
+                    </p>
+                    <img
+                      className="mb-3 rounded-3"
+                      src={img.src}
+                      alt={`Imagen ${idx}`}
+                      style={{
+                        height: "auto",
+                        maxHeight: "70vh",
+                        width:"100%",
+                        objectFit: "contain",
+                        borderRadius: "8px",
+                      }}
+                    />
+                  </div>
                 </Carousel.Item>
               ))}
             </Carousel>
@@ -127,7 +129,59 @@ function ProjectDetails() {
             <p className="text-muted">No hay imágenes disponibles</p>
           )}
         </Modal.Body>
-      </Modal>
+      </Modal> */}
+      <Modal
+  show={showCarouselModal}
+  onHide={handleCloseCarouselModal}
+  centered
+  className="custom-modal"
+  size="xl"
+>
+  <Modal.Body
+    className="d-flex justify-content-center align-items-center"
+    style={{
+      padding: 0,
+      backgroundColor: "#1f2937",
+    }}
+  >
+    {selectedProject?.images?.length > 0 ? (
+      <Carousel
+        controls={selectedProject.images.length > 1}
+        indicators={false}
+        interval={null}
+        className="w-100"
+      >
+        {selectedProject.images.map((img, idx) => (
+          <Carousel.Item key={idx}>
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{
+                width: "100%",
+                height: "80vh",
+              }}
+            >
+              <img
+                src={img.src}
+                alt={`Imagen ${idx}`}
+                style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  width: "auto",
+                  height: "auto",
+                  objectFit: "contain",
+                  borderRadius: "10px",
+                }}
+              />
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    ) : (
+      <p className="text-light p-4">No hay imágenes disponibles</p>
+    )}
+  </Modal.Body>
+</Modal>
+
     </>
   );
 }

@@ -87,14 +87,7 @@
 
 
 .custom-modal .modal-content {
-  background-color: #1f2937;
-  width: auto;
-  border: none;
-  border-radius: 12px;
-  padding: 0.5rem;
-  max-height: 90vh;
-
-
+  background-color: red;
 }
 
 
