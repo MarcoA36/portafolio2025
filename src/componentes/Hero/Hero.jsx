@@ -23,10 +23,10 @@ function Hero() {
         lg={7}
         className="text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start gap-3"
       >
-        {/* <h1 className="hero-title">
-          Hola, soy <span>Marco</span>
-        </h1> */}
-        <h3 className="hero-subtitle">Desarrollador Web Full Stack</h3>
+        <h1 className="hero-title">
+          Desarrollador Web <br /><span>Full Stack</span>
+        </h1>
+        {/* <h3 className="hero-subtitle">Desarrollador Web Full Stack</h3> */}
         <p className="hero-description d-none d-lg-block">
           {/* Me especializo en crear experiencias digitales fluidas y atractivas.
           <br />
