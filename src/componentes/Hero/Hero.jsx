@@ -23,14 +23,17 @@ function Hero() {
         lg={7}
         className="text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start gap-3"
       >
-        <h1 className="hero-title">
+        {/* <h1 className="hero-title">
           Hola, soy <span>Marco</span>
-        </h1>
+        </h1> */}
         <h3 className="hero-subtitle">Desarrollador Web Full Stack</h3>
         <p className="hero-description d-none d-lg-block">
-          Me especializo en crear experiencias digitales fluidas y atractivas.
+          {/* Me especializo en crear experiencias digitales fluidas y atractivas.
           <br />
-          Apasionado por la tecnología, siempre listo para nuevos desafíos.
+          Apasionado por la tecnología, siempre listo para nuevos desafíos. */}
+ Desde 2021, formándome a partir de la creación de proyectos. <br />
+ <span className="text-muted">Ocupándome de seguir las buenas prácticas recomendadas por la comunidad y mejorar la calidad en cada nuevo desarrollo.</span>
+
         </p>
         <SocialLinks />
         <div className="hero-buttons d-flex flex-column flex-sm-row flex-wrap gap-3 mb-3">
