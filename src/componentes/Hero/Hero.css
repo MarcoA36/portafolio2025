@@ -31,11 +31,44 @@
     color: var(--color-secondary-light);
   }
   
-  .hero-description {
+  /* .hero-description {
     font-size: 1.1rem;
     line-height: 1.6;
     max-width: 600px;
     color: var(--color-text-dark);
+  } */
+  .hero-description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #222;
+    /* max-width: 600px; */
+    /* margin: 1.5rem auto 2rem; */
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease;
+  }
+  
+  .hero-description br {
+    display: none; /* Lo ocultamos en móviles para mejor fluidez */
+  }
+
+  .hero-description:hover {
+    color: #007bff; /* Cambio de color sutil al pasar el mouse */
+    cursor: default;
+  }
+  
+  .text-muted {
+    /* font-size: 0.95rem; */
+    color: #6c757d;
+    font-style: italic;
+    display: block;
+    margin-top: 0.5rem;
+    letter-spacing: 0.01em;
+    transition: color 0.3s ease;
+  }
+  
+  .hero-description:hover .text-muted {
+    color: #5a6268; /* También cambia sutilmente al hover */
   }
   
   /* .hero-buttons {
@@ -92,6 +125,7 @@
 
     /* max-width: 500px; */
   }
+  
 
   }
   

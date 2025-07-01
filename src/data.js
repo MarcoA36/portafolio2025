@@ -20,7 +20,7 @@ export const skillsData = [
 export const projectsData = [
   {
     id: "zona_remis",
-    title: "Sitio Web Corporativo para Agencia de Remis",
+    title: "Sitio Web para empresa",
     description:
       "Desarrollo de un sitio web informativo y responsivo para una empresa de transporte, enfocado en brindar detalles claros sobre los servicios ofrecidos y facilitar el contacto con los clientes.",
 

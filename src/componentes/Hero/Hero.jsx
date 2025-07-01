@@ -29,14 +29,12 @@ function Hero() {
         </h1>
         {/* <h3 className="hero-subtitle">Desarrollador Web Full Stack</h3> */}
         <p className="hero-description d-none d-lg-block">
-          {/* Me especializo en crear experiencias digitales fluidas y atractivas.
-          <br />
-          Apasionado por la tecnología, siempre listo para nuevos desafíos. */}
           Desde 2021, formándome a partir de la creación de proyectos. <br />
           <span className="text-muted">
-            Ocupándome de seguir las buenas prácticas recomendadas por la
-            comunidad y mejorar la calidad en cada nuevo desarrollo.
-          </span>
+  Buscando mejorar la calidad constantemente y siguiendo las prácticas recomendadas por la industria.
+</span>
+
+
         </p>
         <SocialLinks />
         <div className="hero-buttons d-flex flex-column flex-sm-row flex-wrap gap-3 mb-3">
